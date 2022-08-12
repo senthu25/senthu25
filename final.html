@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="grid-container">
+        <div class="grid-item grid-item-1">
+          <img src="owl.jpg" alt="owl" />
+        </div>
+        <div class="grid-item grid-item-2">
+          <p>
+            <span id="name">Senthuran Thurairajah</span> <br />
+            <span id="desc"> Data Analysis, SQL, Web Developer</span> <br />
+          </p>
+        </div>
+        <div class="grid-item grid-item-3">
+          <button class="btn">
+            <a href="./Resume.pdf">
+              <i class="fa fa-download"></i>
+            </a>
+            Resume
+          </button>
+          <button class="btn2">
+            <a href="#contact">Contact Me</a>
+          </button>
+        </div>
+        <div class="grid-item grid-item-4">
+          <div class="subitem1">
+            <h2>About Me and Academic Honesty</h2>
+            <p>
+              I declare that my assessment is wholly my own work in accordance
+              with Seneca Academic Policy. No part of this assessment has been
+              copied manually or electronically from any other source (including
+              web sites) except for the information supplied by the WEB222
+              instructors and / or made available in this assessment for my use.
+              I also declare that no part of this assignment has been
+              distributed to other students. <br /><br />
+              <time> <strong>DATE:</strong> August 12th 2020 </time>
+            </p>
+          </div>
+          <div class="subitem2">
+            <h2>Basic information</h2>
+            <span id="info">AGE:</span><br />
+            <span id="info">EMAIL:</span><br />
+            <span id="info">LANGUAGE:</span><br />
+            <span id="info">CLASS SEC:</span><br />
+            <span id="info">INSTRUCTOR:</span> <br />
+          </div>
+          <div class="subitem7">
+            <p>
+              24 <br />
+              sthurairajah1@myseneca.ca <br />
+              English<br />
+              NEE<br />
+              Prof.Noman Atique
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-item grid-item-5">
+          <h2 id="edu">Education</h2>
+          <br />
+        </div>
+        <div class="grid-item grid-item-6">
+          <div class="subitem3">
+            <p>
+              2017 - 2020 <br />
+              Advanced <br />
+              Diploma<br />
+            </p>
+          </div>
+          <div class="subitem4">
+            <p>
+              <strong>Environmental technology Advanced Diploma</strong><br />
+              Seneca College
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-item grid-item-7">
+          <div class="subitem5">
+            <p>
+              2022 - 2023<br />
+              Diploma<br />
+            </p>
+          </div>
+          <div class="subitem6">
+            <p>
+              <strong>Computer Programming Diploma</strong><br />
+              Seneca College
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-item grid-item-8" id="contact">
+          <h2 id="contact">Contact Me</h2>
+        </div>
+
+        <div class="grid-item grid-item-9">
+          <form action="https://httpbin.org/post" method="post">
+            <label for="fname">First and Last Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="name"
+              placeholder="Write your name"
+              required
+            />
+            <label for="email">Email Address:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Write your email"
+              required
+            />
+            <label for="home">Home Address:</label>
+            <input
+              type="text"
+              id="home"
+              name="address"
+              placeholder="Write your home address"
+              required
+            />
+            <label for="cname">City:</label>
+            <input
+              type="text"
+              id="cname"
+              name="city"
+              placeholder="Select a city"
+              id="city"
+              list="citylist"
+              required
+            />
+            <datalist id="citylist">
+              <option>Toronto</option>
+              <option>Ajax</option>
+              <option>Pickering</option>
+              <option>Montreal</option>
+              <option>Brampton</option>
+              <option>Whitby</option>
+            </datalist>
+            <label for="pcode"> Postal Code:</label>
+            <input
+              id="pcode"
+              type="text"
+              name="postal code"
+              placeholder="Enter your postal code"
+              required
+              pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]|[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]"
+            />
+            Question:
+            <input type="radio" name="name" value="Question" /> Comment:
+            <input type="radio" name="name" value="Question" /> Hiring:
+            <input type="radio" name="name" value="Question" />
+            <textarea
+              name="message"
+              placeholder="Write a message!"
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
